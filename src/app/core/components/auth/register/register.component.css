@@ -1,0 +1,129 @@
+.container {
+    height: 80vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.auth-form {
+    padding: 0;
+    display: flex;
+    box-shadow: 0px 0px 5px;
+    width: 50vw;
+    height: 60vh;
+}
+
+.left-panel {
+    width: 50%;
+    background-image: url("../../../../../assets/img/trees.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.right-panel {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 3%;
+}
+
+.right-panel > div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h2 {
+    font-size: xx-large;
+    color: #4A9500;
+}
+
+.full-name {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+}
+
+.full-name > input {
+    width: 48%;
+    height: 50%;
+}
+
+input {
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    width: 100%;
+    height: 20%;
+    border: none;
+    border-bottom: 1px solid black;
+    padding: 1%;
+    transition: border-bottom 0.1s ease;
+}
+
+input:focus::placeholder {
+    transition: all 0.2s ease;
+}
+
+input:focus {
+    outline: none;
+    border-bottom: 2px solid #4A9500;
+}
+
+input:focus::placeholder {
+    color: transparent;
+}
+
+button {
+    width: 30%;
+    height: 100%;
+    font-size: large;
+    background-color: #4A9500;
+    color: white;
+    border: none;
+    margin-bottom: 3%;
+    transition: all 0.2s ease-in-out;
+}
+
+button:hover {
+    color: #4A9500;
+    background-color: white;
+    border: 1px solid #4A9500;
+}
+
+button:active {
+    transform: scale(0.9);
+}
+
+p {
+    font-size: 14px;
+}
+
+@media (max-width: 1024px) {
+    .left-panel {
+        display: none;
+    }
+
+    .right-panel {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .full-name {
+        flex-direction: column;
+    }
+    
+    .full-name > input {
+        width: 100%;
+    }
+}
