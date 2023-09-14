@@ -3,3 +3,16 @@
     margin: 0;
     padding: 0;
 }
+
+html {
+    height: 100vh;
+    width: 100vw;
+    max-height: 100vh;
+    max-width: 100vw;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}

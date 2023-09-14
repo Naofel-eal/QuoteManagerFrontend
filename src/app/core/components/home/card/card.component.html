@@ -1,0 +1,5 @@
+<div class="container" (mouseenter)="navItem._isHovered = true" (mouseleave)="navItem._isHovered = false">
+    <img [src]=navItem._imgPath>
+    <h2>{{navItem._title}}</h2>
+    <p *ngIf="navItem._isHovered" [@enterAnimation]>{{navItem._description}}</p>
+</div>
